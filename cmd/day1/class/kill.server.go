@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	if err := killServer("server.pid"); err != nil {
+	if err := killServer(); err != nil {
 		log.Fatal(err)
 	}
 
@@ -15,7 +15,7 @@ func main() {
 
 const fileName = "/tmp/kill.server.pid"
 
-func killServer(s string) error {
+func killServer() error {
 	file, err := os.Open(fileName)
 	if err != nil {
 		return err

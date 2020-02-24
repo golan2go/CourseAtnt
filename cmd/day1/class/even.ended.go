@@ -20,8 +20,8 @@ func main() {
 
 func isEventEnded(num int) bool {
 	last := num % 10
-	len := int(math.Log10(float64(num)))
-	pow := math.Pow(float64(len), 10)
+	length := int(math.Log10(float64(num)))
+	pow := math.Pow(float64(length), 10)
 	c := num / int(pow)
 	return last == c
 

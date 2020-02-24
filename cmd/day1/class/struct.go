@@ -16,7 +16,7 @@ type B struct {
 }
 
 func main() {
-	//structInStruct()
+	structInStruct()
 	movePoint()
 
 }
