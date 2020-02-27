@@ -8,7 +8,7 @@ import (
 func main() {
 	//processors := make([]*FileProcessor, 0, 100)
 
-	files, err := filepath.Glob("assets/graphs/*")
+	files, err := filepath.Glob("/Users/ig2258/Desktop/GoCourseResources/graphs/*")
 	if err != nil {
 		fmt.Println("Can't access files: ", err)
 		return
@@ -28,7 +28,6 @@ func main() {
 	winner := keyWithMaxValue(messagesPerUser)
 	fmt.Println("The winner is", winner, "with", messagesPerUser[winner], "messages")
 
-	fmt.Println("QQQ")
 }
 
 func keyWithMaxValue(m map[int]int) int {
